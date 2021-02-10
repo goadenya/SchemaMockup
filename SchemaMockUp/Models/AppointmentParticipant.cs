@@ -11,7 +11,7 @@ namespace SchemaMockUp.Models
         [Key]
         public int AppointmentParicipantID { get; set; }
         [ForeignKey("User")]
-        public Class Class { get; set; }
+        public User User { get; set; }
         public int UserID { get; set; } //Fk
         [ForeignKey("Appointment")]
         public int AppointmentID { get; set;} //Fk
