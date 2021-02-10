@@ -15,7 +15,7 @@ namespace SchemaMockUp.Models
         public string InvitationLink { get; set; }
         public double Duration { get; set; }
         public int CreatedByUserID  { get; set; }
-        public List<AppointmentParticipant> AppointmentParticipants { get; set; }
+        public List<AppointmentParticipant> AppointmentParticipants { get; set; } = new List<AppointmentParticipant>();
 
         //Appointment kan ha många participants?
     }

@@ -10,6 +10,6 @@ namespace SchemaMockUp.Models
         [Key]
         public int SkillID { get; set; }
         public string Name { get; set; }
-
+        List<JobSkill> jobSkills { get; set; } = new List<JobSkill>();
     }
 }

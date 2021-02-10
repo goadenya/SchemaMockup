@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace SchemaMockUp.Models
+{
     class School
     {
         [Key]
@@ -12,5 +13,6 @@ namespace SchemaMockUp.Models
         public int Courses { get; set; } //???
         public string AboutSchool { get; set; }
         public string Teachers { get; set; } //?
+        List<Education> Educations { get;  set;  }
     }
 }

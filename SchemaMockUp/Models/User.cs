@@ -18,6 +18,8 @@ namespace SchemaMockUp.Models
         public DateTime DOBifStudent { get; set; }
         public bool EmailVerified { get; set; }
         public List<UserRole> UserRoles { get; set; }
-
+        public List<Chat> Chats { get; set; }
+        public List<Post> Posts { get; set; }
+        public virtual List<Comment> Comments { get; set; }
     }
 }
