@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace testdbbConsole.Models
+namespace SchemaMockUp.Models
 {
     class Content
     {

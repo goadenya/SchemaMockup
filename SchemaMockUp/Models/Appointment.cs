@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace testdbbConsole.Models
+namespace SchemaMockUp.Models
 {
     class Appointment
     {
@@ -18,6 +18,5 @@ namespace testdbbConsole.Models
         public List<AppointmentParticipant> AppointmentParticipants { get; set; }
 
         //Appointment kan ha många participants?
-
     }
 }
