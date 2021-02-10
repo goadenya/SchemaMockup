@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SchemaMockUp.Models
+namespace testdbbConsole.Models
 {
     class Content
     {
-        public int Id { get; set; }
+        public int ContentID { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string Body { get; set; }

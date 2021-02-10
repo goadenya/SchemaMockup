@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SchemaMockUp.Models
+namespace testdbbConsole.Models
 {
     class UserRole
     {
-        public int Id { get; set; }
-        public int UserId { get; set; }
+        public int UserRoleID { get; set; }
+        public int UserID { get; set; }
         public User User { get; set; }
-        public int RoleId { get; set; }
+        public int RoleID { get; set; }
         public Role Role { get; set; }
+
     }
 }
