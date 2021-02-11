@@ -10,10 +10,8 @@ namespace SchemaMockUp.Models
     {
         [Key]
         public int ID { get; set; }
-        [ForeignKey("ID")]
-        public User UserA { get; set; }
-        [ForeignKey("ID")]
-        public User UserB { get; set; }
+        public int SenderID { get; set; }
+        public int RecieverID { get; set; }
         public string Name { get; set; }
         public DateTime Created { get; set; }
         public virtual List<Message> Messages { get; set; }

@@ -11,9 +11,7 @@ namespace SchemaMockUp.Models
         [Key]
         public int ID { get; set; }
         [ForeignKey("ID")]
-        public Post Post { get; set; } //FK  
-        [ForeignKey("ID")]
-        public User User { get; set; } //FK
+        public Post Post { get; set; } //FK     
         [Column("Comment")]
         public string UserComment { get; set; }
         public int Likes { get; set; }
