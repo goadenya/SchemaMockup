@@ -9,13 +9,12 @@ namespace SchemaMockUp.Models
     class Comment
     {
         [Key]
-        public int CommentID { get; set; }
+        public int ID { get; set; }
+        [ForeignKey("ID")]
         public Post Post { get; set; } //FK  
-        [ForeignKey("Post")]
-        public int PostID { get; set; }
-
-        [ForeignKey("UserID")]
+        [ForeignKey("ID")]
         public User User { get; set; } //FK
+        [Column("Comment")]
         public string UserComment { get; set; }
         public int Likes { get; set; }
         public DateTime Date { get; set; }

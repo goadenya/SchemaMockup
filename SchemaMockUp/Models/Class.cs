@@ -9,13 +9,12 @@ namespace SchemaMockUp.Models
     class Class
     {
         [Key]
-        public int ClassID { get; set; }
+        public int ID { get; set; }
+        [ForeignKey("ID")]
         public Course Course { get; set; }
-        [ForeignKey("Course")]
-        public int CourseID { get; set; } //fk
-        public List<User> Users { get; set; } //fk
-        public List<User> Educators{ get; set; } //fK
+        public virtual List<User> Users { get; set; } //fk
+        public virtual List<User> Educators{ get; set; } //fK
         public int Rating { get; set; }
-        public bool IsVerified { get; set; } = false;
+        public virtual bool IsVerified { get; set; } = false;
     }
 }

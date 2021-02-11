@@ -9,16 +9,14 @@ namespace SchemaMockUp.Models
     class Chat
     {
         [Key]
-        public int ChatID { get; set; }
-        //[ForeignKey("User")]
-        //public int UserAID { get; set; }
-        //public User UserA { get; set; }
-        //[ForeignKey("User")]
-        //public int UserBID { get; set; }
-        //public User UserB { get; set; }
+        public int ID { get; set; }
+        [ForeignKey("ID")]
+        public User UserA { get; set; }
+        [ForeignKey("ID")]
+        public User UserB { get; set; }
         public string Name { get; set; }
         public DateTime Created { get; set; }
-        List<Message> Messages { get; set; }
-        public List<User> Users { get; set; }
+        public virtual List<Message> Messages { get; set; }
+        public virtual List<User> Users { get; set; }
     }
 }

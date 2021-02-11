@@ -9,14 +9,12 @@ namespace SchemaMockUp.Models
     class SkillMatch
     {
         [Key]
-        public int SkillMatchID { get; set; }
-        [ForeignKey("Skill")]
-        public int SkillID { get; set; }
+        public int ID { get; set; }
+        [ForeignKey("ID")]
         public Skill Skill { get; set; } //Fk
-        [ForeignKey("User")]
-        public int UserID { get;  set; }
+        [ForeignKey("ID")]
         public User User { get; set; } //Fk
-        public bool IsVerified { get; set; }
+        public bool IsVerified { get; set; } = false;
         public DateTime Created { get; set; }
     }
 }

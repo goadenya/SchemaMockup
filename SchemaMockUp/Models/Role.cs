@@ -8,9 +8,9 @@ namespace SchemaMockUp.Models
     class Role
     {
         [Key]
-        public int RoleID { get; set; }
+        public int ID { get; set; }
         public string NameOfRole { get; set; }
         public string NormalizedName { get; set; }
-        public List<UserRole> UserRoles { get; set; }
+        public virtual List<UserRole> UserRoles { get; set; }
     }
 }

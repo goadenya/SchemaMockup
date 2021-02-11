@@ -9,9 +9,8 @@ namespace SchemaMockUp.Models
     class UserSpecification
     {
         [Key]
-        public int UserSpecificationID { get; set; }
-        [ForeignKey("User")]
-        public int UserID { get; set; }
+        public int ID { get; set; }
+        [ForeignKey("ID")]
         public User User { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -23,6 +22,6 @@ namespace SchemaMockUp.Models
         public string City { get; set; }
         public string About { get; set; }
         public string Skills { get; set; }
-        public List<Experience> Experiences { get; set; }
+        public virtual List<Experience> Experiences { get; set; }
     }
 }

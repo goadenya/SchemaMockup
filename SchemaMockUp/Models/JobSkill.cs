@@ -9,14 +9,10 @@ namespace SchemaMockUp.Models
     class JobSkill
     {
         [Key]
-        public int JobSkillID { get; set; }
-        
+        public int ID { get; set; }
+        [ForeignKey("ID")]
         public Skill Skill { get; set; }
-        [ForeignKey("Skill")]
-        public int SkillID { get; set; } //FK
-        
+        [ForeignKey("ID")]
         public Job Job { get; set; }
-        [ForeignKey("Job")]
-        public int JobID { get; set; } //FK
     }
 }

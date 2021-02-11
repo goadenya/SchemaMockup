@@ -9,9 +9,8 @@ namespace SchemaMockUp.Models
     class Experience
     {
         [Key]
-        public int ExperienceID { get; set; }
-        [ForeignKey("UserSpecification")]
-        public int UserSpecificationID { get; set; }
+        public int ID { get; set; }
+        [ForeignKey("ID")]
         public UserSpecification UserSpecification { get; set; }
         public string Name { get; set; }
         public string ExperienceLevel { get; set; }

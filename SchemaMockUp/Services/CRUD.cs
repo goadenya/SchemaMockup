@@ -41,8 +41,8 @@ namespace SchemaMockUp.Services
                 //userRole3.UserId = 1;
 
                 var userRole2 = new UserRole();
-                userRole2.RoleID = 2;
-                userRole2.UserID = 2;
+                userRole2.ID = 2;
+                userRole2.ID = 2;
 
                 //db.Add(userRole);
                 db.Add(userRole2);

@@ -7,13 +7,10 @@ namespace SchemaMockUp.Models
 {
     class Message
     {
-        public int MessageID { get; set; }
-        [ForeignKey("Chat")]
-        public int ChatID { get;  set;  }
+        public int ID { get; set; }
+        [ForeignKey("ID")]
         public Chat Chat { get; set; } //Fk
-        
-        [ForeignKey("User")]
-        public int UserID { get; set; }
+        [ForeignKey("ID")]
         public User User { get; set; }//Fk
         [Column("Message")]
         public string ChatMessage { get; set; }

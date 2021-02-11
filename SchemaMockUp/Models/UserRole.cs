@@ -9,12 +9,10 @@ namespace SchemaMockUp.Models
     class UserRole
     {
         [Key]
-        public int UserRoleID { get; set; }
-        [ForeignKey("User")]
-        public int UserID { get; set; }
+        public int ID { get; set; }
+        [ForeignKey("ID")]
         public User User { get; set; }
-        [ForeignKey("Role")]
-        public int RoleID { get; set; }
+        [ForeignKey("ID")]
         public Role Role { get; set; }
     }
 }

@@ -8,8 +8,8 @@ namespace SchemaMockUp.Models
     class Skill
     {
         [Key]
-        public int SkillID { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
-        List<JobSkill> jobSkills { get; set; } = new List<JobSkill>();
+        public virtual List<JobSkill> jobSkills { get; set; } = new List<JobSkill>();
     }
 }

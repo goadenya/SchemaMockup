@@ -9,12 +9,10 @@ namespace SchemaMockUp.Models
     class Study
     {
         [Key]
-        public int StudyID { get; set; }
-        [ForeignKey("Education")]
-        public int EducationID { get; set; }
+        public int ID { get; set; }
+        [ForeignKey("ID")]
         public Education Education { get; set; }
-        [ForeignKey("UserSpecification")]
-        public int UserSpecificationID { get; set; }
+        [ForeignKey("ID")]
         public UserSpecification UserSpecification { get; set; }
         public int Rating { get; set; }
         public bool IsVerified { get; set; } = false;
